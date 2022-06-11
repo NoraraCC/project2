@@ -1,0 +1,493 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+.gotop{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-image: url("../images/top@2x.png") ;
+    background-repeat: no-repeat;
+    background-position:0 0 ;
+    background-size: cover;
+    position: fixed;
+    right: 16px;
+    top: calc(100vh - 66px);
+}
+
+/*---- layout ----*/
+.index-box{
+    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/bg_home_sm.svg");
+    background-repeat: no-repeat;
+    background-position: 20px 80%;
+    background-size: calc(100% - 40px);
+}
+.container{
+    max-width: 1088px;
+    margin: 0 auto;
+    padding: 0 20px;
+    height: 100%;
+}
+.wrapper{
+    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/ball01.svg"), url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/ball02.svg"), url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/ball03.svg");
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: -87px calc(100vh + 78px), calc(100vw - 88px) 55%, -76px 86%;
+    background-size: 126px, 135px, 153px;
+    
+}
+.top-info{
+    height: 100vh;
+}
+/*---- text-align ----*/
+.text-center{
+    text-align: center;
+ }
+ .text-left{
+    text-align: left;
+ }
+
+ @media (min-width:768px){
+    .text-md-left{
+        text-align: left;
+    }
+ }
+/*----font-size ----*/
+
+.fs-16{
+    font-size: 16px;
+    line-height: 24px;
+}
+.fs-18{
+    font-size: 18px;
+    line-height: 26px;
+}
+.fs-18{
+    font-size: 18px;;
+}
+.fs-24-bold{
+    font-size: 24px;
+    font-weight: bold;
+}
+.fs-32{
+    font-size: 32px;
+    line-height: 46px;
+}
+.font-bold{
+    font-weight: bold;
+    
+}
+@media (min-width:768px){
+    .fs-md-24-bold {
+        font-size: 24px;
+        font-weight: bold;
+    }
+    .fs-md-32-bold{
+        font-size: 32px;
+        font-weight: bold;
+    }
+    
+   
+    .fs-md-18 {
+        font-size: 18px;
+        
+    }
+    .fs-md-24 {
+        font-size: 24px;
+        
+    }
+    .fs-md-32{
+        font-size: 32px;
+    }
+    .fs-md-48{
+        font-size: 48px;
+        line-height: 70px;
+    }
+}
+/*---- padding ----*/
+.py-16{
+   padding: 1rem 0;
+}
+.pt-32{
+    padding-top: 32px;
+}
+.py-30{
+    padding: 30px 0;
+}
+.py-60{
+    padding: 60px 0;
+}
+/*----margin ----*/
+.m-auto{
+    margin: auto;
+}
+.mb-0{
+    margin-bottom:0px;
+
+}
+.mb-8{
+    margin-bottom:8px;
+}
+.mb-16 {
+    margin-bottom:16px;
+}
+.mb-20{
+    margin-bottom:20px;
+}
+.mb-24{
+    margin-bottom:24px;
+}
+.mb-32{
+    margin-bottom:32px;
+}
+.mb-88{
+    margin-bottom:88px;
+}
+.mb-104{
+    margin-bottom: 104px;
+}
+.mx-16{
+    margin: 0 16px;
+}
+.mx-n16{
+    margin: 0 -16px;
+}
+
+@media (min-width:768px){
+    .mb-md-0 {
+        margin-bottom:0;
+
+    }
+    .mb-md-16{
+        margin-bottom:16px;
+       }
+   .mb-md-24{
+    margin-bottom:24px;
+   }
+    .mb-md-48{
+        margin-bottom:48px;
+        
+    }
+   
+    .mb-md-104{
+        margin-bottom:104px;
+    }
+    .pt-md-0{
+     padding-top: 0;
+    }
+    .py-md-50{
+        padding: 50px 0;
+    }
+    .py-md-100{
+        padding: 100px 0;
+    }
+}
+
+ /*---- color ----*/
+.text-dark{
+   color:#221E1F;
+}
+.text-gray{
+    color:#747474;
+ }
+ .text-blue{
+    color:#56C4C5;
+ }
+
+ /*---- button ----*/
+ .button{
+     display: inline-block;
+     text-decoration: none;
+     border-radius: 27px;
+     font-size: 18px;
+     transition: all .3s;
+     color: #fff;
+     padding: 12px 32px;
+ }
+ .button-main{
+    background-color:#FF5D50;
+ }
+ .button-secondary{
+    background-color:#56C4C5;
+ }
+ .button:hover{
+     opacity: .9;
+ }
+.d-block{
+    display: block;
+}
+/*---- flex-box ----*/
+.d-flex{
+    display: flex;
+    
+}
+.justify-content-between{
+   justify-content: space-between;
+}
+.flex-grow-1 {
+   flex-grow: 1;
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
+.flex-column{
+    flex-direction: column;
+}
+.align-items-center{
+  align-items: center;
+}
+.align-items-stretch{
+    align-items: stretch;
+}
+.order-1{
+  order:1;
+}
+.order-2{
+    order:2;
+  }
+  .flex-shrink-0{
+      flex-shrink: 0;
+  }
+@media (min-width:768px){
+  .flex-md-row{
+    flex-direction: row;
+  }
+  .order-md-1{
+    order:1;
+  }
+  .order-md-2{
+      order:2;
+   }
+   .d-md-flex{
+       display: flex;
+   }
+}
+ /*---- img-brand ----*/
+.img-brand{
+    display: block;
+  width: 100%;
+  height: auto;
+   width: 90px;
+   margin: 0 auto 16px auto;
+   
+}
+@media (min-width:768px){
+    .img-brand{
+        margin: 0 auto 24px auto;
+        width: 60px;
+    }
+}
+/*---- section ----*/
+/*header*/
+.header{
+    padding: 16px 0;
+    border-bottom: 2px solid #FFD153;
+}
+.hero-banner{
+   min-width:auto;
+   max-width: 90%;
+   margin-left: auto;
+}
+/*section-title*/
+.section-title{
+    font-size: 28px;
+    line-height: 40px;
+    font-weight: bold;
+    
+}
+
+.logo-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo-img{
+    display: block;
+    width: auto;
+    max-height: 24px;
+}
+.info-box-container{
+    margin:-24px auto;
+    
+}
+/*----  card-box ----*/
+.card-box{
+    width: 260px;
+    border-radius: 12px;
+    margin: 0 auto 24px auto;
+    background-color: white;
+}
+.card-box img{
+    border-radius: 12px 12px 0 0;
+    display: block;
+     width: 100%;
+}
+.card-box-intro{
+   padding: 16px 16px 24px 16px;
+   text-align: center;
+}
+.info-box{
+    width: 230px;
+    padding: 32px 32px 48px 32px;
+    border-radius: 12px;
+    margin: 24px 0;
+}
+.circle{
+    width: 86px;
+    height: 86px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+}
+.shadow{
+    box-shadow: 0px 2px 10px rgba(0,0,0,.14);
+
+}
+/*----  comment ----*/
+.swiper-comment{
+   position:relative;
+   overflow: hidden;
+   padding: 60px 10px;
+   margin: 0 -10px;
+}
+.swiper-container{
+    position:relative;
+}
+.swiper-pagination{
+    position: inherit;
+    margin-top: 24px;
+}
+
+.comment-box{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 10px #00000014;
+    border-radius: 12px;
+   
+    padding: 24px  16px 16px 16px;
+    position: relative;
+}
+.avatar{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    position: absolute;
+    top: -56px;
+}
+.swiper-pagination-bullet{
+    width:10px;
+    height: 10px;
+    border-radius: 50px;
+}
+.swiper-pagination-bullet-active{
+    background-color: #FFD153;
+    width: 16px;
+    
+}
+
+.comment-box__text{
+   padding: 24px 0; 
+   border-bottom: 1px solid #ddd;
+   font-size: 16px;
+    line-height: 24px;
+}
+.comment-box__info{
+   padding-top: 24px;
+}
+.footer{
+    background-color: #f5f5f5;
+}
+.footer-plan{
+    height: 461px;
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/footer_sm.svg);
+    background-size: 100%; 
+  
+   background-repeat: no-repeat;
+   background-position: top center;
+   position: relative;
+}
+
+.footer-plan__info{
+    width: 100%;
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translate(-50%,0);
+    
+}
+@media (min-width:768px){
+    .gotop{
+        width: 71px;
+        height: 71px;
+        right: 16px;
+        top: calc(100vh - 94px);
+    }
+    /*---- layout ----*/
+.index-box{
+    background-image:  url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/bg_home.svg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: auto;
+}
+.wrapper{
+   
+    background-position: -222px calc(100vh - 180px), calc(100vw - 200px) calc(50% - 155px), 50px 74%;
+    background-size: 360px, 310px,150px;
+    
+}
+     /*---- section ----*/
+     /*header*/
+    .header{
+        padding: 24px 0;
+        border-bottom: 0px;
+    }
+    .hero-banner{
+        min-width: 530px;
+    }
+    .logo-img{
+        max-height: 40px;
+    }
+    /*section-title*/
+    .section-title{
+        font-size: 32px;
+        font-weight: bold;
+        line-height: 46px;
+    }
+    
+    /*----  card-box ----*/
+.card-box{
+    width: 228px;
+    margin: 0 16px;
+   
+}
+    .info-box-container {
+        
+        margin: -14px -24px;
+    }
+    .info-box{
+        padding: 32px 42px 48px 24px;
+        margin: 14px 24px;
+    }
+    /*----  comment ----*/
+    .swiper-comment{
+        padding: 100px 10px;
+    }
+    .comment-box{
+        padding: 24px 32px;
+    }
+    .footer-plan{
+        height: 503px;
+        background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/home_footer.svg);
+       
+        background-size: cover;
+         
+    }
+    .footer-plan__info {
+        bottom: 100px;
+    }
+}
+@media (min-width:1367px){
+    .footer-plan{
+        height: 640px;
+    }
+}
+
+
+
